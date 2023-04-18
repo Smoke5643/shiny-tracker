@@ -50,7 +50,7 @@ export default function Header({ title, settingsClick }) {
   const navigate = useNavigate();
 
   const navigateHome = () => {
-    navigate("/");
+    navigate("/shinytracker/");
   };
 
   return (
