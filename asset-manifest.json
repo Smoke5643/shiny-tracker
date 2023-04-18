@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/shiny-tracker/static/js/main.22aa7ccb.js",
+    "main.js": "/shiny-tracker/static/js/main.ef564292.js",
     "static/js/787.07c52844.chunk.js": "/shiny-tracker/static/js/787.07c52844.chunk.js",
     "index.html": "/shiny-tracker/index.html",
-    "main.22aa7ccb.js.map": "/shiny-tracker/static/js/main.22aa7ccb.js.map",
+    "main.ef564292.js.map": "/shiny-tracker/static/js/main.ef564292.js.map",
     "787.07c52844.chunk.js.map": "/shiny-tracker/static/js/787.07c52844.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.22aa7ccb.js"
+    "static/js/main.ef564292.js"
   ]
 }
