@@ -25,6 +25,8 @@ export default class PokemonService {
       switch (pageMode) {
         case DexModes.DEX:
           return mon.available !== false;
+        case DexModes.GODEX:
+          return mon.availableGo !== false;
         case DexModes.SHINY:
           return mon.shinyAvailable !== false;
         case DexModes.LUCKY:

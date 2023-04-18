@@ -32,19 +32,13 @@ function Home() {
         <li>
           <Link to="/shiny-tracker/dex">Dex</Link>
           <ul>
-            <li>Track your shiny National Dex completion.</li>
+            <li>Track your National Dex completion.</li>
           </ul>
         </li>
         <li>
           <Link to="/shiny-tracker/shiny">ShinyDex</Link>
           <ul>
-            <li>Track which of the available shinies you’ve caught.</li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/lucky">LuckyDex</Link>
-          <ul>
-            <li>Track how many lucky Pokémon you’ve acquired.</li>
+            <li>Track your shiny National Dex completion.</li>
           </ul>
         </li>
         <li>
@@ -57,6 +51,18 @@ function Home() {
           <Link to="/shiny-tracker/shinyunown">ShinyUnownDex</Link>
           <ul>
             <li>Track how many shiny Unown you own.</li>
+          </ul>
+        </li>
+        <li>
+          <Link to="/shiny-tracker/godex">GoDex</Link>
+          <ul>
+            <li>Track your Pokémon Go Dex completion.</li>
+          </ul>
+        </li>
+        <li>
+          <Link to="/shiny-tracker/lucky">LuckyDex</Link>
+          <ul>
+            <li>Track how many lucky Pokémon you’ve acquired.</li>
           </ul>
         </li>
         <li>

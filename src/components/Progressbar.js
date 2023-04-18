@@ -48,7 +48,7 @@ export default function Progressbar({ value, max }) {
       (percent > 66 && percent <= 72) ? "#CEDC18" :
       (percent > 72 && percent <= 78) ? "#C3DC0E" :
       (percent > 78 && percent <= 84) ? "#B6DC07" :
-      (percent > 84 && percent <= 90) ? "#A9DC03" : "#9ADA00";
+      (percent > 84 && percent <= 90) ? "#A9DC03" : "#64DA00";
   }
 
   return (
