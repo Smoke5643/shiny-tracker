@@ -11,7 +11,7 @@ export default class PokemonService {
 
   getMons(pageMode) {
     if (pageMode === DexModes.SHINYUNOWN){
-      return this.filterUnown()
+      return this.filterShinyUnown()
     }
     else if (pageMode === DexModes.UNOWN){
       return this.filterUnown()
@@ -61,20 +61,20 @@ export default class PokemonService {
 
     return unownToReturn;
   }
+  
+  filterShinyUnown() {
+    const ownedMons = this.read(DexModes.SHINYUNOWN) || [];
+    const shinyUnownToReturn = [];
 
-  // filterShinyUnown() {
-  //   const ownedMons = this.read(DexModes.SHINYUNOWN) || [];
-  //   const shinyUnownToReturn = [];
+    Array.from(UNOWN_VALUES).forEach((unown) => {
+      shinyUnownToReturn.push({
+        name: unown,
+        owned: ownedMons.includes(unown),
+      });
+    });
 
-  //   Array.from(UNOWN_VALUES).forEach((unown) => {
-  //     shinyUnownToReturn.push({
-  //       name: unown,
-  //       owned: ownedMons.includes(unown),
-  //     });
-  //   });
-
-  //   return shinyUnownToReturn;
-  // }
+    return shinyUnownToReturn;
+  }
 
   read(pageMode) {
     const key = DexModes.getSaveKey(pageMode);
