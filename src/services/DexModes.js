@@ -5,6 +5,7 @@ export default class DexModes {
   static SHINY = "shiny";
   static LUCKY = "lucky";
   static UNOWN = "unown";
+  static SHINYUNOWN = "shinyunown";
   static SHADOW = "shadow";
 
   static getPageTitle(mode) {
@@ -17,6 +18,8 @@ export default class DexModes {
         return "LuckyDex";
       case DexModes.UNOWN:
         return "UnownDex";
+      case DexModes.SHINYUNOWN:
+        return "ShinyUnownDex";
       case DexModes.SHADOW:
         return "ShadowDex";
       default:
@@ -34,6 +37,8 @@ export default class DexModes {
         return "luckies";
       case DexModes.UNOWN:
         return "unown";
+      case DexModes.SHINYUNOWN:
+        return "shinyunown";
       case DexModes.SHADOW:
         return "shadows";
       default:
@@ -42,6 +47,6 @@ export default class DexModes {
   }
 
   static getDefaultSortOrder(mode) {
-    return mode === DexModes.UNOWN ? SortModes.NAME : SortModes.ID;
+    return mode === DexModes.UNOWN || DexModes.SHINYUNOWN ? SortModes.NAME : SortModes.ID;
   }
 }

@@ -10,9 +10,13 @@ export default class PokemonService {
   }
 
   getMons(pageMode) {
-    return pageMode === DexModes.UNOWN
-      ? this.filterUnown()
-      : this.filter(pokemon, pageMode);
+    if (pageMode === DexModes.SHINYUNOWN){
+      return this.filterUnown()
+    }
+    else if (pageMode === DexModes.UNOWN){
+      return this.filterUnown()
+    }
+    return this.filter(pokemon, pageMode)
   }
 
   filter(allMons, pageMode) {
@@ -58,6 +62,20 @@ export default class PokemonService {
     return unownToReturn;
   }
 
+  // filterShinyUnown() {
+  //   const ownedMons = this.read(DexModes.SHINYUNOWN) || [];
+  //   const shinyUnownToReturn = [];
+
+  //   Array.from(UNOWN_VALUES).forEach((unown) => {
+  //     shinyUnownToReturn.push({
+  //       name: unown,
+  //       owned: ownedMons.includes(unown),
+  //     });
+  //   });
+
+  //   return shinyUnownToReturn;
+  // }
+
   read(pageMode) {
     const key = DexModes.getSaveKey(pageMode);
     const mons = localStorage.getItem(key);
@@ -67,8 +85,15 @@ export default class PokemonService {
   save(data, pageMode) {
     const key = DexModes.getSaveKey(pageMode);
     const owned = data.filter((mon) => mon.owned);
-    const valuesToSave = owned.map((mon) =>
-      pageMode === DexModes.UNOWN ? mon.name : mon.id
+    const valuesToSave = owned.map((mon) => {
+      if(pageMode === DexModes.UNOWN){
+        return mon.name
+      }
+      else if (pageMode === DexModes.SHINYUNOWN){
+        return mon.name
+      }
+      return mon.id
+    }
     );
     localStorage.setItem(key, JSON.stringify(valuesToSave));
   }

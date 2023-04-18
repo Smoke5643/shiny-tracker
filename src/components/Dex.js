@@ -138,6 +138,10 @@ export default function Dex() {
     if (pageMode === DexModes.UNOWN) {
       const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
       return `/shiny-tracker/images/${basePath}/201-${name}.png`;
+    } 
+    else if (pageMode === DexModes.SHINYUNOWN) {
+      const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
+      return `/shiny-tracker/images/shiny-sprites/201-${name}.png`;
     }
     return `/shiny-tracker/images/${basePath}/${mon.id}.png`;
   }
@@ -146,7 +150,7 @@ export default function Dex() {
     return (
       <div
         key={mon.id || mon.name}
-        className={"card " + (mon.owned ? "selected" : "")}
+        className={"card " + (mon.owned ? "selected" : "")}a
         onClick={() => toggleOwned(mon)}
       >
         <span>{mon.name}</span>

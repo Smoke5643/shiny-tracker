@@ -32,7 +32,7 @@ function Home() {
         <li>
           <Link to="/shiny-tracker/dex">Dex</Link>
           <ul>
-            <li>Track your main Pokédex completion in Pokémon GO.</li>
+            <li>Track your shiny National Dex completion.</li>
           </ul>
         </li>
         <li>
@@ -51,6 +51,12 @@ function Home() {
           <Link to="/shiny-tracker/unown">UnownDex</Link>
           <ul>
             <li>Track how many Unown you own.</li>
+          </ul>
+        </li>
+        <li>
+          <Link to="/shiny-tracker/shinyunown">ShinyUnownDex</Link>
+          <ul>
+            <li>Track how many shiny Unown you own.</li>
           </ul>
         </li>
         <li>
