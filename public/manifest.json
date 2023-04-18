@@ -1,6 +1,6 @@
 {
-  "name": "GOChecklists",
-  "short_name": "GOChecklists",
+  "name": "ShinyTracker",
+  "short_name": "ShinyTracker",
   "theme_color": "#445BA1",
   "background_color": "#000000",
   "display": "standalone",

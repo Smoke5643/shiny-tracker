@@ -6,7 +6,7 @@ const UNOWN_VALUES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?";
 
 export default class PokemonService {
   getPageMode() {
-    return window.location.pathname.replace("/", "");
+    return window.location.pathname.replace("/shiny-tracker/", "");
   }
 
   getMons(pageMode) {

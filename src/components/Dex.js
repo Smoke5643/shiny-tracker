@@ -103,7 +103,7 @@ export default function Dex() {
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
 
   React.useEffect(() => {
-    document.title = "GOChecklists: " + DexModes.getPageTitle(pageMode);
+    document.title = "Shiny Tracker " + DexModes.getPageTitle(pageMode);
 
     const mons = pokemonService.getMons(pageMode);
     const sortedMons = pokemonService.sort(mons, sortOrder);
@@ -137,9 +137,9 @@ export default function Dex() {
 
     if (pageMode === DexModes.UNOWN) {
       const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
-      return `/images/${basePath}/201-${name}.png`;
+      return `/shiny-tracker/images/${basePath}/201-${name}.png`;
     }
-    return `/images/${basePath}/${mon.id}.png`;
+    return `/shiny-tracker/images/${basePath}/${mon.id}.png`;
   }
 
   const buildListItem = (mon) => {
@@ -150,11 +150,11 @@ export default function Dex() {
         onClick={() => toggleOwned(mon)}
       >
         <span>{mon.name}</span>
-        <img className="checkbox unchecked" src="/images/unchecked.png" alt="Unselect" />
-        <img className="checkbox checked" src="/images/checked.png" alt="Select" />
+        <img className="checkbox unchecked" src="/shiny-tracker/images/unchecked.png" alt="Unselect" />
+        <img className="checkbox checked" src="/shiny-tracker/images/checked.png" alt="Select" />
         <img
           className="sprite"
-          alt=""
+          alt={mon.name}
           src={getImagePath(mon)}
         />
       </div>

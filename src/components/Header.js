@@ -33,10 +33,10 @@ const HeaderContainer = styled.h1`
     cursor: pointer;
   }
   .home {
-    background-image: url(/images/home.svg);
+    background-image: url(/shiny-tracker/images/home.svg);
   }
   .settings {
-    background-image: url(/images/settings.svg);
+    background-image: url(/shiny-tracker/images/settings.svg);
   }
   .title {
     flex-grow: 2;

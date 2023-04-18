@@ -9,12 +9,12 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/dex" element={<Dex />} />
-          <Route exact path="/shiny" element={<Dex />} />
-          <Route exact path="/lucky" element={<Dex />} />
-          <Route exact path="/unown" element={<Dex />} />
-          <Route exact path="/shadow" element={<Dex />} />
+          <Route exact path="/shiny-tracker/" element={<Home />} />
+          <Route exact path="/shiny-tracker/dex" element={<Dex />} />
+          <Route exact path="/shiny-tracker/shiny" element={<Dex />} />
+          <Route exact path="/shiny-tracker/lucky" element={<Dex />} />
+          <Route exact path="/shiny-tracker/unown" element={<Dex />} />
+          <Route exact path="/shiny-tracker/shadow" element={<Dex />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

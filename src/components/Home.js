@@ -21,40 +21,40 @@ const List = styled.ul`
 
 function Home() {
   React.useEffect(() => {
-    document.title = "GOChecklists: Up-to-date checklists for Pokémon GO";
+    document.title = "Shiny Tracker: Up-to-date checklists for shiny Pokémon";
   }, []);
 
   return (
     <React.Fragment>
-      <Header title="GO Checklists"></Header>
+      <Header title="Shiny Tracker"></Header>
 
       <List>
         <li>
-          <Link to="/dex">Dex</Link>
+          <Link to="/shiny-tracker/dex">Dex</Link>
           <ul>
             <li>Track your main Pokédex completion in Pokémon GO.</li>
           </ul>
         </li>
         <li>
-          <Link to="/shiny">ShinyDex</Link>
+          <Link to="/shiny-tracker/shiny">ShinyDex</Link>
           <ul>
             <li>Track which of the available shinies you’ve caught.</li>
           </ul>
         </li>
         <li>
-          <Link to="/lucky">LuckyDex</Link>
+          <Link to="/shiny-tracker/lucky">LuckyDex</Link>
           <ul>
             <li>Track how many lucky Pokémon you’ve acquired.</li>
           </ul>
         </li>
         <li>
-          <Link to="/unown">UnownDex</Link>
+          <Link to="/shiny-tracker/unown">UnownDex</Link>
           <ul>
             <li>Track how many Unown you own.</li>
           </ul>
         </li>
         <li>
-          <Link to="/shadow">ShadowDex</Link>
+          <Link to="/shiny-tracker/shadow">ShadowDex</Link>
           <ul>
             <li>Track how many shadow Pokémon you have.</li>
           </ul>
