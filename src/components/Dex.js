@@ -15,16 +15,19 @@ const FixedContainer = styled.div`
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: white;
+  background-color: #333333;
+  color: white;
   z-index: 2;
 `;
 
 const MonList = styled.div`
   padding: 5.7em 0 0.5em 0;
-  margin: 0.25em;
+  margin-top: 0.6em;
   touch-action: manipulation;
   display: flex;
   flex-wrap: wrap;
+  background-color: #333333;
+  color: white;
   justify-content: center;
 
   .card-group {
@@ -36,14 +39,14 @@ const MonList = styled.div`
   }
 
   .card {
-    width: 9.5em;
-    margin: 0.25em;
+    width: 10em;
+    margin: 0.4em;
     border: 1px solid #DCE7DC;
     border-radius: 12px;
     cursor: pointer;
-    height: 8.5em;
+    height: 10.5em;
     position: relative;
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
   @media (max-width: 500px) {
     .card { font-size: 0.75em; }
@@ -52,7 +55,7 @@ const MonList = styled.div`
     .card { font-size: 0.70em; }
   }
   .selected {
-    background-color: #F5F5F5;
+    background-color: #666666;
   }
   .card span {
     position: absolute;
@@ -77,12 +80,12 @@ const MonList = styled.div`
   }
   .sprite {
     position: absolute;
-    top: 2em;
+    top: 2.4em;
     left: 0;
     right: 0;
     text-align: center;
     margin: auto;
-    width: 6em;
+    width: 7.5em;
   }
 `;
 
@@ -203,7 +206,7 @@ export default function Dex() {
 
   return (
     <React.Fragment>
-      <div style={{ opacity: showSettings ? 0.2 : 1 }}>
+      <div className='main' style={{ opacity: showSettings ? 0.2 : 1 }}>
         <FixedContainer>
           <Header
             title={DexModes.getPageTitle(pageMode)}

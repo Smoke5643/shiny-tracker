@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import '../App.css'
 
 import Header from "./Header";
 
 const List = styled.ul`
   font-size: 1.25em;
+  color: white;
 
   li {
     margin: 20px;

@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 const ProgressbarContainer = styled.div`
   display: flex;
-  margin: 0.6em 0.5em 0.20em 0.5em;
+  justify-content: center;
+  margin: 0.6em 0.5em 0.20em 1.2em;
 
   .progressbar {
-    border: 1px solid gray;
+    border: 2px solid gray;
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
   }
   .progressbar-contents {
     height: 25px;
