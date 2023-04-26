@@ -2856,7 +2856,7 @@ const pokemon = [
     id: 490,
     available: true,
     availableGo: false,
-    shinyAvailable: true,
+    shinyAvailable: false,
     gender: "none",
   },
   {
