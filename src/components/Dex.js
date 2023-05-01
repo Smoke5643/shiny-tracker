@@ -106,7 +106,7 @@ export default function Dex() {
   const [sortOrder, setSortOrder] = React.useState(getSortOrder());
 
   React.useEffect(() => {
-    document.title = "Shiny Tracker " + DexModes.getPageTitle(pageMode);
+    document.title = "Shiny Tracker - " + DexModes.getPageTitle(pageMode);
 
     const mons = pokemonService.getMons(pageMode);
     const sortedMons = pokemonService.sort(mons, sortOrder);

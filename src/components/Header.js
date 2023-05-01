@@ -44,6 +44,11 @@ const HeaderContainer = styled.h1`
   .filler {
     width: 2em;
   }
+  .charm {
+    height: 1.5em;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 `;
 
 export default function Header({ title, settingsClick }) {
@@ -61,7 +66,13 @@ export default function Header({ title, settingsClick }) {
         </button>
       )}
 
-      <span className="title">{title}</span>
+      <span className="title">
+        
+      <img className="charm" src="/shiny-tracker/images/shinycharm.png" alt="shiny charm"/>
+        {title}
+      <img className="charm" src="/shiny-tracker/images/shinycharm.png" alt="shiny charm"/>
+      
+      </span>
 
       {settingsClick && (
         <button className="settings" onClick={settingsClick}></button>

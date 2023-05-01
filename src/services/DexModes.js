@@ -14,17 +14,17 @@ export default class DexModes {
       case DexModes.DEX:
         return "Dex";
       case DexModes.GODEX:
-        return "GoDex";
+        return "Go Dex";
       case DexModes.SHINY:
-        return "ShinyDex";
+        return "Shiny Dex";
       case DexModes.LUCKY:
-        return "LuckyDex";
+        return "Lucky Dex";
       case DexModes.UNOWN:
-        return "UnownDex";
+        return "Unown Dex";
       case DexModes.SHINYUNOWN:
-        return "ShinyUnownDex";
+        return "Shiny Unown Dex";
       case DexModes.SHADOW:
-        return "ShadowDex";
+        return "Shadow Dex";
       default:
         throw new Error("Unknown page mode");
     }

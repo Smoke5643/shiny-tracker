@@ -8,13 +8,16 @@ import Header from "./Header";
 const List = styled.ul`
   font-size: 1.25em;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-inline-start: 0px;
+  margin-top: 100px;
 
-  li {
-    margin: 20px;
-  }
   ul {
     font-size: 0.8em;
-    margin: 0;
+    margin: 20px;
   }
   ul li {
     margin: 0;
@@ -23,57 +26,45 @@ const List = styled.ul`
 
 function Home() {
   React.useEffect(() => {
-    document.title = "Shiny Tracker: Up-to-date checklists for shiny Pokémon";
+    document.title = "Shiny Tracker: Up-to-date checklists for all your Pokémon";
   }, []);
 
   return (
     <React.Fragment>
       <Header title="Shiny Tracker"></Header>
-
-      <List>
-        <li>
+      <div>
+        <List>
+        <Link to="/shiny-tracker/shiny">Shiny Dex</Link>
+          <ul>
+            <li>Track your shiny National Dex completion.</li>
+          </ul>
           <Link to="/shiny-tracker/dex">Dex</Link>
           <ul>
             <li>Track your National Dex completion.</li>
           </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/shiny">ShinyDex</Link>
-          <ul>
-            <li>Track your shiny National Dex completion.</li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/unown">UnownDex</Link>
-          <ul>
-            <li>Track how many Unown you own.</li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/shinyunown">ShinyUnownDex</Link>
-          <ul>
-            <li>Track how many shiny Unown you own.</li>
-          </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/godex">GoDex</Link>
+          <Link to="/shiny-tracker/godex">Go Dex</Link>
           <ul>
             <li>Track your Pokémon Go Dex completion.</li>
           </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/lucky">LuckyDex</Link>
+          <Link to="/shiny-tracker/unown">Unown Dex</Link>
+          <ul>
+            <li>Track how many Unown you own.</li>
+          </ul>
+          <Link to="/shiny-tracker/shinyunown">Shiny Unown Dex</Link>
+          <ul>
+            <li>Track how many shiny Unown you own.</li>
+          </ul>
+
+          <Link to="/shiny-tracker/lucky">Lucky Dex</Link>
           <ul>
             <li>Track how many lucky Pokémon you’ve acquired.</li>
           </ul>
-        </li>
-        <li>
-          <Link to="/shiny-tracker/shadow">ShadowDex</Link>
+          <Link to="/shiny-tracker/shadow">Shadow Dex</Link>
           <ul>
             <li>Track how many shadow Pokémon you have.</li>
           </ul>
-        </li>
-      </List>
+        </List>
+      </div>
     </React.Fragment>
   )
 }

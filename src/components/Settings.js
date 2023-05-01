@@ -5,8 +5,8 @@ import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
 
 const Dialog = styled.div`
-  position: fixed;
-  top: 10em;
+  position: absolute;
+  top: 33em;
   border-color: black;
   border-width: 1px 0;
   border-style: solid;
