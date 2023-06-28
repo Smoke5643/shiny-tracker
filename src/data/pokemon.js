@@ -6142,10 +6142,16 @@ const pokemon = [
     shinyAvailable: true,
   },
   {
-    name: "Gimmighoul",
+    name: "Gimmighoul Roaming",
     id: 999,
     available: true,
     shinyAvailable: false,
+  },
+  {
+    name: "Gimmighoul",
+    id: 999.1,
+    available: true,
+    shinyAvailable: true,
   },
   {
     name: "Gholdengo",
