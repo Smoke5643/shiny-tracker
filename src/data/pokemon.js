@@ -6151,7 +6151,7 @@ const pokemon = [
     shinyAvailable: false,
   },
   {
-    name: "Gimmighoul",
+    name: "Gimmighoul Chest",
     id: 999.1,
     available: true,
     shinyAvailable: true,
@@ -6231,6 +6231,27 @@ const pokemon = [
     available: true,
     availableGo: false,
     shinyAvailable: false,
+  },
+  {
+    name: "Dipplin",
+    id: 1011,
+    available: true,
+    availableGo: false,
+    shinyAvailable: true,
+  },
+  {
+    name: "Poltchageist",
+    id: 1012,
+    available: true,
+    availableGo: false,
+    shinyAvailable: true,
+  },
+  {
+    name: "Sinistcha",
+    id: 1013,
+    available: true,
+    availableGo: false,
+    shinyAvailable: true,
   },
 ];
 
