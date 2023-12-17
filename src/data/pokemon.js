@@ -6253,6 +6253,82 @@ const pokemon = [
     availableGo: false,
     shinyAvailable: true,
   },
+  {
+    name: "Okidogi",
+    id: 1014,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Munkidori",
+    id: 1015,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Fezandipiti",
+    id: 1016,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Ogrepon",
+    id: 1017,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Archaludon",
+    id: 1018,
+    available: true,
+    availableGo: false,
+    shinyAvailable: true,
+  },  {
+    name: "Hydrapple",
+    id: 1019,
+    available: true,
+    availableGo: false,
+    shinyAvailable: true,
+  },  
+  {
+    name: "Gouging Fire",
+    id: 1020,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Raging Bolt",
+    id: 1021,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Iron Boulder",
+    id: 1022,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },  
+  {
+    name: "Iron Crown",
+    id: 1023,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false
+  },  
+  {
+    name: "Terapagos",
+    id: 1024,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },
 ];
 
 export default pokemon;
