@@ -6329,6 +6329,13 @@ const pokemon = [
     availableGo: false,
     shinyAvailable: false,
   },
+  {
+    name: "Pecharunt",
+    id: 1025,
+    available: true,
+    availableGo: false,
+    shinyAvailable: false,
+  },
 ];
 
 export default pokemon;
