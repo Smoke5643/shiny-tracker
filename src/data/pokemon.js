@@ -4267,7 +4267,7 @@ const pokemon = [
     id: 719,
     available: true,
     availableGo: true,
-    shinyAvailable: true,
+    shinyAvailable: false,
   },
   {
     name: "Hoopa",
