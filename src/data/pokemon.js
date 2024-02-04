@@ -1,4 +1,4 @@
-// Hisui sprites from https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/post-9195974
+// All Sprites from Serebii.net
 
 const pokemon = [
   {
@@ -5451,7 +5451,7 @@ const pokemon = [
     name: "Wyrdeer",
     id: 899,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
@@ -5721,14 +5721,14 @@ const pokemon = [
     name: "Tadbulb",
     id: 938,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
     name: "Bellibolt",
     id: 939,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
@@ -5910,14 +5910,14 @@ const pokemon = [
     name: "Varoom",
     id: 965,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
     name: "Revavroom",
     id: 966,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
@@ -5952,14 +5952,14 @@ const pokemon = [
     name: "Greavard",
     id: 971,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
     name: "Houndstone",
     id: 972,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
@@ -5973,14 +5973,14 @@ const pokemon = [
     name: "Cetoddle",
     id: 974,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
     name: "Cetitan",
     id: 975,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
@@ -6008,14 +6008,14 @@ const pokemon = [
     name: "Annihilape",
     id: 979,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
     name: "Clodsire",
     id: 980,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
