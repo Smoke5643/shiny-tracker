@@ -4653,7 +4653,7 @@ const pokemon = [
     name: "Drampa",
     id: 780,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
@@ -5490,7 +5490,7 @@ const pokemon = [
     name: "Enamorus",
     id: 905,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: false,
   },
   {
