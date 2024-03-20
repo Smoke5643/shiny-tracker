@@ -77,7 +77,7 @@ export default function Settings(props) {
   }
 
   const checkAllMons = () => {
-    props.checkAllMons
+    props.checkAllMons();
   }
 
   return (
