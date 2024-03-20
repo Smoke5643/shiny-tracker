@@ -91,6 +91,7 @@ const UncheckAllButton = styled.button`
 export default function Settings(props) {
   const { visible, onVisibleChange, sortOrder,
       onSortOrderChange, pageMode } = props;
+  const [confirmAllCheck, setConfirmAllCheck] = useState(false);
 
   const hideSettings = () => {
     onVisibleChange(false);
@@ -101,13 +102,20 @@ export default function Settings(props) {
     onSortOrderChange(newSortOrder);
   }
 
-  const checkAllMons = () => {
-    props.checkAllMons();
+  const handleCheckAllMons = () => {
+    if (confirmAllCheck || window.confirm("Are you sure you want to check all Pokémon?")) {
+      props.checkAllMons();
+      setConfirmAllCheck(false);
+  }
+}
+
+  const handleUncheckAllMons = () => {
+    if (confirmAllCheck || window.confirm("Are you sure you want to uncheck all Pokémon?")) {
+      props.uncheckAllMons();
+      setConfirmAllCheck(false);
+    }
   }
 
-  const uncheckAllMons = () => {
-    props.uncheckAllMons();
-  }
 
   return (
     <>
@@ -125,8 +133,8 @@ export default function Settings(props) {
         </select>
       </div>
 
-      <CheckAllButton onClick={checkAllMons}>Check All</CheckAllButton>      
-      <UncheckAllButton onClick={uncheckAllMons}>Uncheck All</UncheckAllButton>      
+      <CheckAllButton onClick={handleCheckAllMons}>Check All</CheckAllButton>      
+      <UncheckAllButton onClick={handleUncheckAllMons}>Uncheck All</UncheckAllButton>      
 
       <button onClick={hideSettings}>Close</button>
     </Dialog>
