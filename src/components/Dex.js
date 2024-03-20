@@ -210,6 +210,7 @@ export default function Dex() {
     setOwned(updatedMons.length);
     pokemonService.save(updatedMons, pageMode);
     setTimeout(() => { sort() }, 100);
+    window.location.reload();
   };
 
   return (
@@ -221,7 +222,6 @@ export default function Dex() {
             settingsClick={toggleSettings}
           />
           <Progressbar value={owned} max={mons.length} />
-          <button onClick={checkAllMons}>Check All</button>
         </FixedContainer>
 
         <Render if={sortOrder === SortModes.ID}>
@@ -237,7 +237,8 @@ export default function Dex() {
         visible={showSettings}
         onVisibleChange={onVisibleChange}
         sortOrder={sortOrder}
-        onSortOrderChange={onSortOrderChange} />
+        onSortOrderChange={onSortOrderChange}
+        checkAllMons={checkAllMons} />
     </React.Fragment>
   );
 }

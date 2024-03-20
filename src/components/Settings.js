@@ -52,6 +52,17 @@ const Dialog = styled.div`
   }
 `;
 
+const CheckAllButton = styled.button`
+  width: 100%;
+  border: 1px solid black;
+  padding: 1em;
+  border: 1px solid #2AB3FF;
+  background: white;
+  color: #2AB3FF;
+  font-size: 0.9em;
+  cursor: pointer;
+`;
+
 export default function Settings(props) {
   const { visible, onVisibleChange, sortOrder,
       onSortOrderChange, pageMode } = props;
@@ -63,6 +74,10 @@ export default function Settings(props) {
   const changeSortOrder = (e) => {
     const newSortOrder = e.target.value;
     onSortOrderChange(newSortOrder);
+  }
+
+  const checkAllMons = () => {
+    props.checkAllMons
   }
 
   return (
@@ -78,6 +93,8 @@ export default function Settings(props) {
           <option value={SortModes.CHECKED}>Checked</option>
         </select>
       </div>
+
+      <CheckAllButton onClick={checkAllMons}>Check All</CheckAllButton>      
 
       <button onClick={hideSettings}>Close</button>
     </Dialog>
