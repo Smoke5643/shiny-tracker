@@ -91,7 +91,7 @@ const UncheckAllButton = styled.button`
 export default function Settings(props) {
   const { visible, onVisibleChange, sortOrder,
       onSortOrderChange, pageMode } = props;
-  const [confirmAllCheck, setConfirmAllCheck] = useState(false);
+  const [confirmAllCheck, setConfirmAllCheck] = React.useState(false);
 
   const hideSettings = () => {
     onVisibleChange(false);
