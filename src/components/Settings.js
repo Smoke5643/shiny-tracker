@@ -91,7 +91,7 @@ const UncheckAllButton = styled.button`
 export default function Settings(props) {
   const { visible, onVisibleChange, sortOrder,
       onSortOrderChange, pageMode } = props;
-  const [confirmAllCheck, setConfirmAllCheck] = React.useState(false);
+  // const [confirmAllCheck, setConfirmAllCheck] = React.useState(false);
 
   const hideSettings = () => {
     onVisibleChange(false);
@@ -103,17 +103,15 @@ export default function Settings(props) {
   }
 
   const handleCheckAllMons = () => {
-    if (confirmAllCheck || window.confirm("Are you sure you want to check all Pokémon?")) {
+    if (window.confirm("Are you sure you want to check all Pokémon?")) {
       props.checkAllMons();
-      setConfirmAllCheck(false);
       // window.location.reload();
   }
 }
 
   const handleUncheckAllMons = () => {
-    if (confirmAllCheck || window.confirm("Are you sure you want to uncheck all Pokémon?")) {
+    if (window.confirm("Are you sure you want to uncheck all Pokémon?")) {
       props.uncheckAllMons();
-      setConfirmAllCheck(false);
       // window.location.reload();
     }
   }
