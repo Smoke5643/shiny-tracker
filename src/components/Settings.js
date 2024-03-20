@@ -4,6 +4,16 @@ import styled from "styled-components";
 import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
 
+const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2; 
+`;
+
 const Dialog = styled.div`
   position: fixed;
   top: 50%;
@@ -17,6 +27,7 @@ const Dialog = styled.div`
   max-width: 400px; 
   background: white;
   box-sizing: border-box;
+  z-index: 3;
 
   h2 {
     margin: 0em;
@@ -46,6 +57,7 @@ const Dialog = styled.div`
     color: #2AB3FF;
     font-size: 0.9em;
     cursor: pointer;
+    margin-top: 1em;
   }
   .primary {
     background-color: #2AB3FF;
@@ -98,6 +110,8 @@ export default function Settings(props) {
   }
 
   return (
+    <>
+    {visible && <Overlay />}
     <Dialog style={{ display: visible ? "block": "none" }}>
       <h2>Settings</h2>
 
@@ -116,5 +130,6 @@ export default function Settings(props) {
 
       <button onClick={hideSettings}>Close</button>
     </Dialog>
+    </>
   );
 }
