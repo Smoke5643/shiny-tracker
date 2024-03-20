@@ -204,6 +204,14 @@ export default function Dex() {
     setShowSettings(newVisible);
   }
 
+  const checkAllMons = () => {
+    const updatedMons = mons.map(mon => ({ ...mon, owned: true }));
+    setMons(updatedMons);
+    setOwned(updatedMons.length);
+    pokemonService.save(updatedMons, pageMode);
+    setTimeout(() => { sort() }, 100);
+  };
+
   return (
     <React.Fragment>
       <div className='main' style={{ opacity: showSettings ? 0.2 : 1 }}>
@@ -213,6 +221,7 @@ export default function Dex() {
             settingsClick={toggleSettings}
           />
           <Progressbar value={owned} max={mons.length} />
+          <button onClick={checkAllMons}>Check All</button>
         </FixedContainer>
 
         <Render if={sortOrder === SortModes.ID}>
