@@ -106,6 +106,7 @@ export default function Settings(props) {
     if (confirmAllCheck || window.confirm("Are you sure you want to check all Pokémon?")) {
       props.checkAllMons();
       setConfirmAllCheck(false);
+      window.location.reload();
   }
 }
 
@@ -113,6 +114,7 @@ export default function Settings(props) {
     if (confirmAllCheck || window.confirm("Are you sure you want to uncheck all Pokémon?")) {
       props.uncheckAllMons();
       setConfirmAllCheck(false);
+      window.location.reload();
     }
   }
 
