@@ -76,12 +76,17 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./Header";
 
+const CenteredContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+`;
+
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  justify-content: center;
-  margin-top: 100px;
 `;
 
 const Card = styled.div`
@@ -111,38 +116,41 @@ const Home = () => {
   return (
     <React.Fragment>
       <Header title="Shiny Tracker" />
-      <Container>
-        <Card>
-          <Link to="/shiny-tracker/shiny">Shiny Dex</Link>
-          <p>Track your shiny National Dex completion.</p>
-        </Card>
-        <Card>
-          <Link to="/shiny-tracker/dex">Dex</Link>
-          <p>Track your National Dex completion.</p>
-        </Card>
-        <Card>
-          <Link to="/shiny-tracker/godex">Go Dex</Link>
-          <p>Track your Pokémon Go Dex completion.</p>
-        </Card>
-        <Card>
-          <Link to="/shiny-tracker/unown">Unown Dex</Link>
-          <p>Track how many Unown you own.</p>
-        </Card>
-        <Card>
-          <Link to="/shiny-tracker/shinyunown">Shiny Unown Dex</Link>
-          <p>Track how many shiny Unown you own.</p>
-        </Card>
-        <Card>
-          <Link to="/shiny-tracker/lucky">Lucky Dex</Link>
-          <p>Track how many lucky Pokémon you’ve acquired.</p>
-        </Card>
-        <Card>
-          <Link to="/shiny-tracker/shadow">Shadow Dex</Link>
-          <p>Track how many shadow Pokémon you have.</p>
-        </Card>
-      </Container>
+      <CenteredContainer>
+        <Container>
+          <Card>
+            <Link to="/shiny-tracker/shiny">Shiny Dex</Link>
+            <p>Track your shiny National Dex completion.</p>
+          </Card>
+          <Card>
+            <Link to="/shiny-tracker/dex">Dex</Link>
+            <p>Track your National Dex completion.</p>
+          </Card>
+          <Card>
+            <Link to="/shiny-tracker/godex">Go Dex</Link>
+            <p>Track your Pokémon Go Dex completion.</p>
+          </Card>
+          <Card>
+            <Link to="/shiny-tracker/unown">Unown Dex</Link>
+            <p>Track how many Unown you own.</p>
+          </Card>
+          <Card>
+            <Link to="/shiny-tracker/shinyunown">Shiny Unown Dex</Link>
+            <p>Track how many shiny Unown you own.</p>
+          </Card>
+          <Card>
+            <Link to="/shiny-tracker/lucky">Lucky Dex</Link>
+            <p>Track how many lucky Pokémon you’ve acquired.</p>
+          </Card>
+          <Card>
+            <Link to="/shiny-tracker/shadow">Shadow Dex</Link>
+            <p>Track how many shadow Pokémon you have.</p>
+          </Card>
+        </Container>
+      </CenteredContainer>
     </React.Fragment>
   );
 };
 
 export default Home;
+

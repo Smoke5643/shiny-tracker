@@ -11,7 +11,7 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2; 
+  z-index: 2;
 `;
 
 const Dialog = styled.div`
@@ -24,7 +24,7 @@ const Dialog = styled.div`
   border-style: solid;
   padding: 2em;
   width: 80%;
-  max-width: 400px; 
+  max-width: 400px;
   background: white;
   box-sizing: border-box;
   z-index: 3;
@@ -39,14 +39,16 @@ const Dialog = styled.div`
   > div {
     margin: 2em 0;
     display: flex;
+    flex-direction: column; /* Change to column for mobile */
   }
   label {
     margin-right: 10px;
     min-width: 10em;
   }
   select {
-    flex: 2;
+    flex: 1; /* Take up full width */
     font-size: 16px;
+    margin-top: 0.5em; /* Add margin for spacing */
   }
   button {
     width: 100%;
@@ -70,73 +72,71 @@ const Dialog = styled.div`
 const CheckAllButton = styled.button`
   width: 100%;
   border: 1px solid black;
-  padding: .5em;
+  padding: 0.5em;
   border: 1px solid #2AB3FF;
   background: white;
   color: #2AB3FF;
   font-size: 0.9em;
   cursor: pointer;
+  margin-top: 1em;
 `;
+
 const UncheckAllButton = styled.button`
   width: 100%;
   border: 1px solid black;
-  padding: .5em;
+  padding: 0.5em;
   border: 1px solid #2AB3FF;
   background: white;
   color: #2AB3FF;
   font-size: 0.9em;
   cursor: pointer;
+  margin-top: 0.5em; /* Adjust spacing */
 `;
 
 export default function Settings(props) {
-  const { visible, onVisibleChange, sortOrder,
-      onSortOrderChange, pageMode } = props;
-  // const [confirmAllCheck, setConfirmAllCheck] = React.useState(false);
+  const { visible, onVisibleChange, sortOrder, onSortOrderChange, pageMode } = props;
 
   const hideSettings = () => {
     onVisibleChange(false);
-  }
+  };
 
   const changeSortOrder = (e) => {
     const newSortOrder = e.target.value;
     onSortOrderChange(newSortOrder);
-  }
+  };
 
   const handleCheckAllMons = () => {
     if (window.confirm("Are you sure you want to check all Pokémon?")) {
       props.checkAllMons();
-
     }
-  }
+  };
 
   const handleUncheckAllMons = () => {
     if (window.confirm("Are you sure you want to uncheck all Pokémon?")) {
       props.uncheckAllMons();
     }
-  }
-
+  };
 
   return (
     <>
-    {visible && <Overlay />}
-    <Dialog style={{ display: visible ? "block": "none" }}>
-      <h2>Settings</h2>
+      {visible && <Overlay />}
+      <Dialog style={{ display: visible ? "block" : "none" }}>
+        <h2>Settings</h2>
 
-      <div>
-        <label htmlFor="sortOrder">Sort order:</label>
-        <select id="sortOrder" value={sortOrder} onChange={changeSortOrder}>
-          {pageMode !== DexModes.UNOWN &&
-            <option value={SortModes.ID}>Pokédex Number</option>}
-          <option value={SortModes.NAME}>Name</option>
-          <option value={SortModes.CHECKED}>Checked</option>
-        </select>
-      </div>
+        <div>
+          <label htmlFor="sortOrder">Sort order:</label>
+          <select id="sortOrder" value={sortOrder} onChange={changeSortOrder}>
+            {pageMode !== DexModes.UNOWN && <option value={SortModes.ID}>Pokédex Number</option>}
+            <option value={SortModes.NAME}>Name</option>
+            <option value={SortModes.CHECKED}>Checked</option>
+          </select>
+        </div>
 
-      <CheckAllButton onClick={handleCheckAllMons}>Check All</CheckAllButton>      
-      <UncheckAllButton onClick={handleUncheckAllMons}>Uncheck All</UncheckAllButton>      
+        <CheckAllButton onClick={handleCheckAllMons}>Check All</CheckAllButton>
+        <UncheckAllButton onClick={handleUncheckAllMons}>Uncheck All</UncheckAllButton>
 
-      <button onClick={hideSettings}>Close</button>
-    </Dialog>
+        <button onClick={hideSettings}>Close</button>
+      </Dialog>
     </>
   );
 }
