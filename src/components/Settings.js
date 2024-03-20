@@ -105,14 +105,13 @@ export default function Settings(props) {
   const handleCheckAllMons = () => {
     if (window.confirm("Are you sure you want to check all Pokémon?")) {
       props.checkAllMons();
-      // window.location.reload();
+
+    }
   }
-}
 
   const handleUncheckAllMons = () => {
     if (window.confirm("Are you sure you want to uncheck all Pokémon?")) {
       props.uncheckAllMons();
-      // window.location.reload();
     }
   }
 

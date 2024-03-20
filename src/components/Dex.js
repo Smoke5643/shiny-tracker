@@ -219,6 +219,7 @@ export default function Dex() {
     setOwned(updatedMons.length);
     pokemonService.save(updatedMons, pageMode);
     setTimeout(() => { sort() }, 100);
+    window.location.reload();
   };
 
   return (
