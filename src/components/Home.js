@@ -77,30 +77,29 @@ import styled from "styled-components";
 import Header from "./Header";
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
   margin-top: 100px;
 `;
 
 const Card = styled.div`
-  background-color: #f9f9f9;
+  background-color: #9f9f9f;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px;
   text-align: center;
-  width: 300px;
 
   a {
-    color: #333;
+    color: black;
     text-decoration: none;
     font-weight: bold;
   }
 
   p {
     margin-top: 10px;
-    color: #666;
+    color: black;
   }
 `;
 
@@ -147,4 +146,3 @@ const Home = () => {
 };
 
 export default Home;
-
