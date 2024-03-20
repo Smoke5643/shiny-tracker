@@ -55,7 +55,17 @@ const Dialog = styled.div`
 const CheckAllButton = styled.button`
   width: 100%;
   border: 1px solid black;
-  padding: 1em;
+  padding: 2em;
+  border: 1px solid #2AB3FF;
+  background: white;
+  color: #2AB3FF;
+  font-size: 0.9em;
+  cursor: pointer;
+`;
+const UncheckAllButton = styled.button`
+  width: 100%;
+  border: 1px solid black;
+  padding: 2em;
   border: 1px solid #2AB3FF;
   background: white;
   color: #2AB3FF;
@@ -80,6 +90,10 @@ export default function Settings(props) {
     props.checkAllMons();
   }
 
+  const uncheckAllMons = () => {
+    props.uncheckAllMons();
+  }
+
   return (
     <Dialog style={{ display: visible ? "block": "none" }}>
       <h2>Settings</h2>
@@ -95,6 +109,7 @@ export default function Settings(props) {
       </div>
 
       <CheckAllButton onClick={checkAllMons}>Check All</CheckAllButton>      
+      <UncheckAllButton onClick={uncheckAllMons}>Check All</UncheckAllButton>      
 
       <button onClick={hideSettings}>Close</button>
     </Dialog>

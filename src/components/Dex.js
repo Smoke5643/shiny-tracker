@@ -213,6 +213,15 @@ export default function Dex() {
     window.location.reload();
   };
 
+  const uncheckAllMons = () => {
+    const updatedMons = mons.map(mon => ({ ...mon, owned: false }));
+    setMons(updatedMons);
+    setOwned(updatedMons.length);
+    pokemonService.save(updatedMons, pageMode);
+    setTimeout(() => { sort() }, 100);
+    window.location.reload();
+  };
+
   return (
     <React.Fragment>
       <div className='main' style={{ opacity: showSettings ? 0.2 : 1 }}>
@@ -238,7 +247,8 @@ export default function Dex() {
         onVisibleChange={onVisibleChange}
         sortOrder={sortOrder}
         onSortOrderChange={onSortOrderChange}
-        checkAllMons={checkAllMons} />
+        checkAllMons={checkAllMons}
+        uncheckAllMons={uncheckAllMons} />
     </React.Fragment>
   );
 }
