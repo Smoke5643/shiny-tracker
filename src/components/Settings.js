@@ -5,13 +5,16 @@ import DexModes from "../services/DexModes";
 import SortModes from "../services/SortModes";
 
 const Dialog = styled.div`
-  position: absolute;
-  top: 33em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-color: black;
   border-width: 1px 0;
   border-style: solid;
   padding: 2em;
-  width: 100%;
+  width: 80%;
+  max-width: 400px; 
   background: white;
   box-sizing: border-box;
 
@@ -55,7 +58,7 @@ const Dialog = styled.div`
 const CheckAllButton = styled.button`
   width: 100%;
   border: 1px solid black;
-  padding: 2em;
+  padding: .5em;
   border: 1px solid #2AB3FF;
   background: white;
   color: #2AB3FF;
@@ -65,7 +68,7 @@ const CheckAllButton = styled.button`
 const UncheckAllButton = styled.button`
   width: 100%;
   border: 1px solid black;
-  padding: 2em;
+  padding: .5em;
   border: 1px solid #2AB3FF;
   background: white;
   color: #2AB3FF;
@@ -109,7 +112,7 @@ export default function Settings(props) {
       </div>
 
       <CheckAllButton onClick={checkAllMons}>Check All</CheckAllButton>      
-      <UncheckAllButton onClick={uncheckAllMons}>Check All</UncheckAllButton>      
+      <UncheckAllButton onClick={uncheckAllMons}>Uncheck All</UncheckAllButton>      
 
       <button onClick={hideSettings}>Close</button>
     </Dialog>
