@@ -77,6 +77,11 @@ import styled from "styled-components";
 import Header from "./Header";
 
 const Container = styled.div`
+  background-color: #303030;
+  padding: 20px 0;
+`;
+
+const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
@@ -86,17 +91,23 @@ const Container = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
+ ;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
+
 
 const Card = styled(Link)`
   display: block;
-  background-color: #f9f9f9;
+  background-color: #a9a9a9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  cursor: hand;
   text-decoration: none;
 
   &:hover {
@@ -104,7 +115,7 @@ const Card = styled(Link)`
   }
 
   &:hover h2 {
-    color: #2AB3FF;
+    color: #2ab3ff;
   }
 
   h2 {
@@ -129,6 +140,7 @@ const Home = () => {
     <React.Fragment>
       <Header title="Shiny Tracker" />
       <Container>
+      <CardContainer>
         <Card to="/shiny-tracker/shiny">
           <h2>Shiny Dex</h2>
           <p>Track your shiny National Dex completion.</p>
@@ -157,6 +169,7 @@ const Home = () => {
           <h2>Shadow Dex</h2>
           <p>Track how many shadow Pokémon you have.</p>
         </Card>
+      </CardContainer>
       </Container>
     </React.Fragment>
   );
