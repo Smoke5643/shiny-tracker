@@ -88,6 +88,10 @@ const CardContainer = styled.div`
   justify-content: center;
   margin: 100px auto 0; /* Center the container horizontally */
   max-width: calc(2/3 * 100vw); /* Limit container width to 2/3 of viewport width */
+  .card:nth-child(7) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, calc((1/2 * 100vw - 40px) / 2)));
