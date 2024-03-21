@@ -78,28 +78,45 @@ import Header from "./Header";
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   justify-content: center;
   margin-top: 100px;
-  padding: 0 20px; 
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
-const CardLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`;
-
-const Card = styled.div`
-  background-color: #9f9f9f;
+const Card = styled(Link)`
+  display: block;
+  background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  height: 100%; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    background-color: #ccc; 
+    transform: translateY(-5px);
+  }
+
+  &:hover h2 {
+    color: #2AB3FF;
+  }
+
+  h2 {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #666;
+    font-size: 1em;
   }
 `;
 
@@ -112,52 +129,40 @@ const Home = () => {
     <React.Fragment>
       <Header title="Shiny Tracker" />
       <Container>
-        <CardLink to="/shiny-tracker/shiny">
-          <Card>
-            <h3>Shiny Dex</h3>
-            <p>Track your shiny National Dex completion.</p>
-          </Card>
-        </CardLink>
-        <CardLink to="/shiny-tracker/dex">
-          <Card>
-            <h3>Dex</h3>
-            <p>Track your National Dex completion.</p>
-          </Card>
-        </CardLink>
-        <CardLink to="/shiny-tracker/godex">
-          <Card>
-            <h3>Go Dex</h3>
-            <p>Track your Pokémon Go Dex completion.</p>
-          </Card>
-        </CardLink>
-        <CardLink to="/shiny-tracker/unown">
-          <Card>
-            <h3>Unown Dex</h3>
-            <p>Track all your Unown.</p>
-          </Card>
-        </CardLink>
-        <CardLink to="/shiny-tracker/shinyunown">
-          <Card>
-            <h3>Shiny Unown Dex</h3>
-            <p>Track all you shiny Unown variants.</p>
-          </Card>
-        </CardLink>
-        <CardLink to="/shiny-tracker/lucky">
-          <Card>
-            <h3>Pogo Lucky Dex</h3>
-            <p>Track all your lucky Pokemon in Go.</p>
-          </Card>
-        </CardLink>
-        <CardLink to="/shiny-tracker/shadow">
-          <Card>
-            <h3>Pogo Shadow Dex</h3>
-            <p>Track all your shadow Pokemon in Go.</p>
-          </Card>
-        </CardLink>
+        <Card to="/shiny-tracker/shiny">
+          <h2>Shiny Dex</h2>
+          <p>Track your shiny National Dex completion.</p>
+        </Card>
+        <Card to="/shiny-tracker/dex">
+          <h2>Dex</h2>
+          <p>Track your National Dex completion.</p>
+        </Card>
+        <Card to="/shiny-tracker/godex">
+          <h2>Go Dex</h2>
+          <p>Track your Pokémon Go Dex completion.</p>
+        </Card>
+        <Card to="/shiny-tracker/unown">
+          <h2>Unown Dex</h2>
+          <p>Track how many Unown you own.</p>
+        </Card>
+        <Card to="/shiny-tracker/shinyunown">
+          <h2>Shiny Unown Dex</h2>
+          <p>Track how many shiny Unown you own.</p>
+        </Card>
+        <Card to="/shiny-tracker/lucky">
+          <h2>Lucky Dex</h2>
+          <p>Track how many lucky Pokémon you’ve acquired.</p>
+        </Card>
+        <Card to="/shiny-tracker/shadow">
+          <h2>Shadow Dex</h2>
+          <p>Track how many shadow Pokémon you have.</p>
+        </Card>
       </Container>
     </React.Fragment>
   );
 };
 
 export default Home;
+
+
 
