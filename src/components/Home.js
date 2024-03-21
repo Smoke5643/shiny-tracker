@@ -83,7 +83,7 @@ const Container = styled.div`
 
 const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, calc((2/3 * 100vw - 40px) / 3)));
+  grid-template-columns: repeat(auto-fit, minmax(200px, calc((2/3 * 100vw - 40px) / 3)));
   grid-gap: 20px;
   justify-content: center;
   margin: 100px auto 0; /* Center the container horizontally */
@@ -92,6 +92,11 @@ const CardContainer = styled.div`
   @media (max-width: 1024px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, calc((1/2 * 100vw - 40px) / 2)));
     max-width: calc(3/4 * 100vw);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(180px, calc((1/2 * 100vw - 40px) / 2)));
+    max-width: calc(5/6 * 100vw);
   }
 
 `;
