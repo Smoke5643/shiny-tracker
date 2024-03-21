@@ -83,20 +83,17 @@ const Container = styled.div`
 
 const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, calc((2/3 * 100vw - 40px) / 3)));
   grid-gap: 20px;
   justify-content: center;
-  margin-top: 100px;
-  max-width: calc(2/3 * (100vw - 40px));
+  margin: 100px auto 0; /* Center the container horizontally */
+  max-width: calc(2/3 * 100vw); /* Limit container width to 2/3 of viewport width */
 
   @media (max-width: 1440px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, calc((1/2 * 100vw - 40px) / 2)));
   }
- 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`; 
+
+`;
 
 
 
