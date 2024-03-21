@@ -83,21 +83,20 @@ const Container = styled.div`
 
 const CardContainer = styled.div`
   display: grid;
-  //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-columns: repeat(3, minmax(300px, calc(2/3 * (100vw - 40px))));
+  grid-template-columns: repeat(3, 2fr);
   grid-gap: 20px;
   justify-content: center;
   margin-top: 100px;
 
   @media (max-width: 1440px) {
-    grid-template-columns: repeat(2, minmax(300px, calc(2/3 * (100vw - 40px))));
+    grid-template-columns: repeat(2, 2fr);
   }
  
   @media (max-width: 768px) {
-    grid-template-columns: repeat(1, minmax(300px, calc(2/3 * (100vw - 40px))));
+    grid-template-columns: repeat(1, 2fr);
   }
- 
-`;
+`; 
+
 
 
 const Card = styled(Link)`
