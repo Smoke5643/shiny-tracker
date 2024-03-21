@@ -96,7 +96,7 @@ const CardContainer = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, calc((1/2 * 100vw - 40px) / 2)));
-    max-width: calc(5/6 * 100vw);
+    max-width: 95%;
   }
 
 `;
