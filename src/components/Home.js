@@ -90,7 +90,7 @@ const CardContainer = styled.div`
   max-width: calc(2/3 * 100vw); /* Limit container width to 2/3 of viewport width */
 
   @media (max-width: 1024px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, calc((1/2 * 100vw - 40px) / 2)));
+    grid-template-columns: repeat(auto-fit, minmax(200px, calc((1/2 * 100vw - 40px) / 2)));
   }
 
 `;
