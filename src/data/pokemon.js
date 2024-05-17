@@ -6117,7 +6117,7 @@ const pokemon = [
     shinyAvailable: true,
   },
   {
-    name: "Iron Moth",
+    name: "Iron Thorns",
     id: 995,
     available: true,
     availableGo: false,
