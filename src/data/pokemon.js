@@ -6160,7 +6160,7 @@ const pokemon = [
     name: "Gholdengo",
     id: 1000,
     available: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Wo-Chien",

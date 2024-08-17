@@ -88,6 +88,7 @@ const CardContainer = styled.div`
   justify-content: center;
   margin: 100px auto 0; /* Center the container horizontally */
   max-width: calc(2/3 * 100vw); /* Limit container width to 2/3 of viewport width */
+  
   .card:nth-child(7) {
       justify-self: center;
     }
