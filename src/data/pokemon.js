@@ -3831,7 +3831,7 @@ const pokemon = [
     name: "Meloetta",
     id: 648,
     available: true,
-    tradable: true,
+    tradable: false,
     shinyAvailable: true,
   },
   {
