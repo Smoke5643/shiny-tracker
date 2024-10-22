@@ -6147,7 +6147,7 @@ const pokemon = [
   {
     name: "Gimmighoul Roaming",
     id: 999,
-    available: true,
+    available: false,
     shinyAvailable: false,
   },
   {
