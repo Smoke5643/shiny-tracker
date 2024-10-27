@@ -154,6 +154,10 @@ const Home = () => {
           <h2>Shiny Dex</h2>
           <p>Track your shiny National Dex completion.</p>
         </Card>
+        <Card to="/shiny-tracker/gender">
+          <h2>Gender Dex</h2>
+          <p>Track your gender variants.</p>
+        </Card>
         <Card to="/shiny-tracker/dex">
           <h2>Dex</h2>
           <p>Track your National Dex completion.</p>
@@ -169,10 +173,6 @@ const Home = () => {
         <Card to="/shiny-tracker/shinyunown">
           <h2>Shiny Unown Dex</h2>
           <p>Track how many shiny Unown you own.</p>
-        </Card>
-        <Card to="/shiny-tracker/gender">
-          <h2>Gender Dex</h2>
-          <p>Track your gender variants.</p>
         </Card>
         <Card to="/shiny-tracker/shadow">
           <h2>Shadow Dex</h2>
