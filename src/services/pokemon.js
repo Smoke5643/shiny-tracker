@@ -24,7 +24,7 @@ export default class PokemonService {
     const availableMons = allMons.filter((mon) => {
       switch (pageMode) {
         case DexModes.DEX:
-          return mon.available !== false;
+          return mon.available !== false && mon.gender !== true;
         case DexModes.GODEX:
           return mon.availableGo !== false;
         case DexModes.SHINY:
