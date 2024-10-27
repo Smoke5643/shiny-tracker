@@ -146,6 +146,9 @@ export default function Dex() {
       const name = mon.name === "?" ? "question" : mon.name.toLowerCase();
       return `/shiny-tracker/images/shiny-sprites/201-${name}.png`;
     }
+    else if (pageMode === DexModes.GENDER) {
+      return `/shiny-tracker/images/gender/${mon.id}.png`;
+    }
     return `/shiny-tracker/images/${basePath}/${mon.id}.png`;
   }
 
