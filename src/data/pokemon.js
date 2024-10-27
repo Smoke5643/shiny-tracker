@@ -17,7 +17,6 @@ const pokemon = [
     name: "Venusaur",
     id: 3,
     shinyAvailable: true,
-    
     shadow: true,
   },
   {
@@ -82,7 +81,18 @@ const pokemon = [
     name: "Butterfree",
     id: 12,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Butterfree-M",
+    id: 12.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Butterfree-F",
+    id: 12.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Weedle",
@@ -121,15 +131,37 @@ const pokemon = [
     name: "Rattata",
     id: 19,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Rattata-M",
+    id: 19.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Rattata-F",
+    id: 19.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Raticate",
     id: 20,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Raticate-M",
+    id: 20.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Raticate-F",
+    id: 20.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Spearow",
@@ -157,13 +189,35 @@ const pokemon = [
     name: "Pikachu",
     id: 25,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Pikachu-M",
+    id: 25.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Pikachu-F",
+    id: 25.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Raichu",
     id: 26,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Raichu-M",
+    id: 26.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Raichu-F",
+    id: 26.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Sandshrew",
@@ -255,15 +309,37 @@ const pokemon = [
     name: "Zubat",
     id: 41,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Zubat-M",
+    id: 41.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Zubat-F",
+    id: 41.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Golbat",
     id: 42,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Golbat-M",
+    id: 42.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Golbat-F",
+    id: 42.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Oddish",
@@ -275,15 +351,37 @@ const pokemon = [
     name: "Gloom",
     id: 44,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Gloom-M",
+    id: 44.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Gloom-F",
+    id: 44.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Vileplume",
     id: 45,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Vileplume-M",
+    id: 45.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Vileplume-F",
+    id: 45.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Paras",
