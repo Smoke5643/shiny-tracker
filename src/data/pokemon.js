@@ -491,15 +491,37 @@ const pokemon = [
     name: "Kadabra",
     id: 64,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Kadabra-M",
+    id: 64.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Kadabra-F",
+    id: 64.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Alakazam",
     id: 65,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Alakazam-M",
+    id: 65.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Alakazam-F",
+    id: 65.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Machop",
@@ -613,10 +635,34 @@ const pokemon = [
     
   },
   {
+    name: "Doduo-M",
+    id: 84.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Doduo-F",
+    id: 84.3,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
     name: "Dodrio",
     id: 85,
     shinyAvailable: true,
     
+  },
+  {
+    name: "Dodrio-M",
+    id: 85.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Dodrio-F",
+    id: 85.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Seel",
@@ -683,8 +729,19 @@ const pokemon = [
     name: "Hypno",
     id: 97,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Hypno-M",
+    id: 97.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Hypno-F",
+    id: 97.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Krabby",
@@ -769,13 +826,35 @@ const pokemon = [
     name: "Rhyhorn",
     id: 111,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Rhyhorn-M",
+    id: 111.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Rhyhorn-F",
+    id: 111.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Rhydon",
     id: 112,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Rhydon-M",
+    id: 112.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Rhydon-F",
+    id: 112.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Chansey",
@@ -811,13 +890,35 @@ const pokemon = [
     name: "Goldeen",
     id: 118,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Goldeen-M",
+    id: 118.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Goldeen-F",
+    id: 118.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Seaking",
     id: 119,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Seaking-M",
+    id: 119.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Seaking-F",
+    id: 119.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Staryu",
@@ -840,8 +941,19 @@ const pokemon = [
     name: "Scyther",
     id: 123,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Scyther-M",
+    id: 123.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Scyther-F",
+    id: 123.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Jynx",
@@ -881,11 +993,34 @@ const pokemon = [
     shadow: true,
   },
   {
+    name: "Magikarp-M",
+    id: 129.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Magikarp-F",
+    id: 129.3,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
     name: "Gyarados",
     id: 130,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Gyarados-M",
+    id: 130.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Gyarados-F",
+    id: 130.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Lapras",
@@ -903,7 +1038,18 @@ const pokemon = [
     name: "Eevee",
     id: 133,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Eevee-M",
+    id: 133.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Eevee-F",
+    id: 133.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Vaporeon",
@@ -1030,8 +1176,19 @@ const pokemon = [
     name: "Meganium",
     id: 154,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Meganium-M",
+    id: 154.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Meganium-F",
+    id: 154.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Cyndaquil",
@@ -1093,13 +1250,35 @@ const pokemon = [
     name: "Ledyba",
     id: 165,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Ledyba-M",
+    id: 165.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Ledyba-F",
+    id: 165.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Ledian",
     id: 166,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Ledian-M",
+    id: 166.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Ledian-F",
+    id: 166.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Spinarak",
@@ -1162,8 +1341,19 @@ const pokemon = [
     name: "Xatu",
     id: 178,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Xatu-M",
+    id: 178.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Xatu-F",
+    id: 178.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Mareep",
@@ -1203,15 +1393,37 @@ const pokemon = [
     name: "Sudowoodo",
     id: 185,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Sudowoodo-M",
+    id: 185.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Sudowoodo-F",
+    id: 185.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Politoed",
     id: 186,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Politoed-M",
+    id: 186.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Politoed-F",
+    id: 186.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Hoppip",
@@ -1235,8 +1447,19 @@ const pokemon = [
     name: "Aipom",
     id: 190,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Aipom-M",
+    id: 190.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Aipom-F",
+    id: 190.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Sunkern",
@@ -1257,15 +1480,37 @@ const pokemon = [
     name: "Wooper",
     id: 194,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Wooper-M",
+    id: 194.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Wooper-F",
+    id: 194.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Quagsire",
     id: 195,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Quagsire-M",
+    id: 195.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Quagsire-F",
+    id: 195.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Espeon",
@@ -1281,8 +1526,19 @@ const pokemon = [
     name: "Murkrow",
     id: 198,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Murkrow-M",
+    id: 198.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Murkrow-F",
+    id: 198.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Slowking",
@@ -1307,14 +1563,36 @@ const pokemon = [
     id: 202,
     shinyAvailable: true,
     shadow: true,
-    
+  },
+  {
+    name: "Wobbuffet-M",
+    id: 202.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Wobbuffet-F",
+    id: 202.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Girafarig",
     id: 203,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Girafarig-M",
+    id: 203.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Girafarig-F",
+    id: 203.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Pineco",
@@ -1337,15 +1615,37 @@ const pokemon = [
     name: "Gligar",
     id: 207,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Gligar-M",
+    id: 207.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Gligar-F",
+    id: 207.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Steelix",
     id: 208,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Steelix-m",
+    id: 208.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Steelix-F",
+    id: 208.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Snubbull",
@@ -1368,8 +1668,19 @@ const pokemon = [
     name: "Scizor",
     id: 212,
     shinyAvailable: true,
-    
     shadow: true,
+  },
+  {
+    name: "Scizor-M",
+    id: 212.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Scizor-F",
+    id: 212.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Shuckle",
@@ -1381,7 +1692,18 @@ const pokemon = [
     name: "Heracross",
     id: 214,
     shinyAvailable: true,
-    
+  },
+  {
+    name: "Heracross-M",
+    id: 214.2,
+    shinyAvailable: false,
+    gender: true,
+  },
+  {
+    name: "Heracross-F",
+    id: 214.3,
+    shinyAvailable: false,
+    gender: true,
   },
   {
     name: "Sneasel",
