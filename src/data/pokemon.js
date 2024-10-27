@@ -1283,9 +1283,7 @@ const pokemon = [
   {
     name: "Hisuian Sneasel",
     id: 215.1,
-    shinyAvailable: true,
     gender: true,
-    shadow: true,
   },
   {
     name: "Teddiursa",

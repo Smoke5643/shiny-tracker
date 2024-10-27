@@ -13,7 +13,7 @@ function App() {
           <Route exact path="/shiny-tracker/dex" element={<Dex />} />
           <Route exact path="/shiny-tracker/godex" element={<Dex />} />
           <Route exact path="/shiny-tracker/shiny" element={<Dex />} />
-          <Route exact path="/shiny-tracker/lucky" element={<Dex />} />
+          <Route exact path="/shiny-tracker/gender" element={<Dex />} />
           <Route exact path="/shiny-tracker/unown" element={<Dex />} />
           <Route exact path="/shiny-tracker/shinyunown" element={<Dex />} />
           <Route exact path="/shiny-tracker/shadow" element={<Dex />} />

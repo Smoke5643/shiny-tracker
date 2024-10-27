@@ -30,7 +30,7 @@ export default class PokemonService {
         case DexModes.SHINY:
           return mon.shinyAvailable !== false;
         case DexModes.GENDER:
-          return mon.available !== false && mon.gender !== false;
+          return mon.gender === true;
         case DexModes.SHADOW:
           return mon.shadow === true;
         default:
