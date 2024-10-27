@@ -4,7 +4,7 @@ export default class DexModes {
   static DEX = "dex";
   static GODEX = "godex";
   static SHINY = "shiny";
-  static LUCKY = "lucky";
+  static GENDER = "gender";
   static UNOWN = "unown";
   static SHINYUNOWN = "shinyunown";
   static SHADOW = "shadow";
@@ -17,8 +17,8 @@ export default class DexModes {
         return "Go Dex";
       case DexModes.SHINY:
         return "Shiny Dex";
-      case DexModes.LUCKY:
-        return "Lucky Dex";
+      case DexModes.GENDER:
+        return "Gender Dex";
       case DexModes.UNOWN:
         return "Unown Dex";
       case DexModes.SHINYUNOWN:
@@ -38,8 +38,8 @@ export default class DexModes {
         return "godex";
       case DexModes.SHINY:
         return "shinies";
-      case DexModes.LUCKY:
-        return "luckies";
+      case DexModes.GENDER:
+        return "genders";
       case DexModes.UNOWN:
         return "unown";
       case DexModes.SHINYUNOWN:

@@ -170,9 +170,9 @@ const Home = () => {
           <h2>Shiny Unown Dex</h2>
           <p>Track how many shiny Unown you own.</p>
         </Card>
-        <Card to="/shiny-tracker/lucky">
-          <h2>Lucky Dex</h2>
-          <p>Track how many lucky Pokémon you’ve acquired.</p>
+        <Card to="/shiny-tracker/gender">
+          <h2>Gender Dex</h2>
+          <p>Track your gender variants.</p>
         </Card>
         <Card to="/shiny-tracker/shadow">
           <h2>Shadow Dex</h2>
