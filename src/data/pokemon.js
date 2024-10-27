@@ -1636,7 +1636,7 @@ const pokemon = [
     shadow: true,
   },
   {
-    name: "Steelix-m",
+    name: "Steelix-M",
     id: 208.2,
     shinyAvailable: false,
     gender: true,
@@ -3108,14 +3108,14 @@ const pokemon = [
     shadow: true,
   },
   {
-    name: "Bidoof--M",
+    name: "Bidoof-M",
     id: 399.2,
     shinyAvailable: false,
     gender: true,
   },
   {
     name: "Bidoof-F",
-    id: 399.2,
+    id: 399.3,
     shinyAvailable: false,
     gender: true,
   },
