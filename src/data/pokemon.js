@@ -4008,7 +4008,7 @@ const pokemon = [
     id: 490,
     available: true,
     availableGo: false,
-    shinyAvailable: false,
+    shinyAvailable: true,
     gender: "none",
   },
   {
@@ -6729,7 +6729,7 @@ const pokemon = [
     id: 905,
     available: true,
     availableGo: true,
-    shinyAvailable: false,
+    shinyAvailable: true,
   },
   {
     name: "Sprigatito",
