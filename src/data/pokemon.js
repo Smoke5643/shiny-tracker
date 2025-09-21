@@ -1116,7 +1116,7 @@ const pokemon = [
   },
   {
     name: "Galarian Articuno",
-    id: 144-1,
+    id: 144.1,
     shinyAvailable: true,
     gender: "none",
     shadow: true,
@@ -1130,7 +1130,7 @@ const pokemon = [
     },
        {
       name: "Galarian Zapdos",
-      id: 145-1,
+      id: 145.1,
       shinyAvailable: true,
       gender: "none",
       shadow: true,
@@ -1144,7 +1144,7 @@ const pokemon = [
   },
   {
     name: "Galarian Moltres",
-    id: 146-1,
+    id: 146.1,
     shinyAvailable: true,
     gender: "none",
     shadow: true,
