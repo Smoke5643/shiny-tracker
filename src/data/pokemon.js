@@ -7458,14 +7458,14 @@ const pokemon = [
     name: "Koraidon",
     id: 1007,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
     name: "Miraidon",
     id: 1008,
     available: true,
-    availableGo: false,
+    availableGo: true,
     shinyAvailable: true,
   },
   {
