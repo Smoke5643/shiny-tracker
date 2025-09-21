@@ -7418,14 +7418,12 @@ const pokemon = [
     available: true,
     availableGo: false,
     shinyAvailable: true,
-    shinyAvailable: true,
   },
   {
     name: "Chien-Pao",
     id: 1002,
     available: true,
     availableGo: false,
-    shinyAvailable: true,
     shinyAvailable: true,
   },
   {
@@ -7434,14 +7432,12 @@ const pokemon = [
     available: true,
     availableGo: false,
     shinyAvailable: true,
-    shinyAvailable: true,
   },
   {
     name: "Chi-Yu",
     id: 1004,
     available: true,
     availableGo: false,
-    shinyAvailable: true,
     shinyAvailable: true,
   },
   {
@@ -7465,7 +7461,6 @@ const pokemon = [
     availableGo: true,
     shinyAvailable: true,
     availableGo: false,
-    shinyAvailable: true,
   },
   {
     name: "Miraidon",
@@ -7474,7 +7469,6 @@ const pokemon = [
     availableGo: true,
     shinyAvailable: true,
     availableGo: false,
-    shinyAvailable: true,
   },
   {
     name: "Walking Wake",
