@@ -2898,7 +2898,7 @@ const pokemon = [
     shinyAvailable: true,
   },
   {
-    name: "Relicanth-m",
+    name: "Relicanth-M",
     id: 369.2,
     shinyAvailable: false,
     gender: true,
